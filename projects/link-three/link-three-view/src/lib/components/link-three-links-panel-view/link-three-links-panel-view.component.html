@@ -1,0 +1,35 @@
+<article class="link-three-links-panel-view link-three-links-panel-preset">
+  <section class="link-three-links-panel-view-container-links">
+    <section class="link-three-links-panel-view-editor">
+      <label class="lt-txt-m-bold link-three-links-panel-view-editor-title">{{TITLE_EDITOR_LABEL}}</label>
+
+      <label class="lt-txt-m link-three-links-panel-view-editor-description">{{DESCRIPTION_EDITOR_LABEL}}</label>
+    </section>
+
+    <button class="link-three-links-panel-view-button-add">
+      <label class="lt-txt-s-bold link-three-links-panel-view-add">{{ADD_LABEL}}</label>
+    </button>
+
+    <ng-container *ngIf="false; else guide">
+      <link-three-link-view></link-three-link-view>
+    </ng-container>
+
+    <ng-template #guide>
+      <section class="link-three-links-panel-view-guide-content link-three-links-panel-view-guide-content-preset-98">
+        <span class="lt-font lt-icon-image"></span>
+
+        <section class="link-three-links-panel-view-guide">
+          <label class="lt-txt-m-bold link-three-links-panel-view-guide-title">{{TITLE_GUIDE_LABEL}}</label>
+
+          <label class="lt-txt-m link-three-links-panel-view-guide-description">{{DESCRIPTION_GUIDE_LABEL}}</label>
+        </section>
+      </section>
+    </ng-template>
+  </section>
+
+  <section class="link-three-links-panel-view-container-button">
+    <button class="link-three-links-panel-view-button-save link-three-links-panel-view-button-save-major-62">
+      <label class="lt-txt-s-bold link-three-links-panel-view-save">{{SAVE_LABEL}}</label>
+    </button>
+  </section>
+</article>

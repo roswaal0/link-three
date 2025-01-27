@@ -1,0 +1,32 @@
+<article class="app-link-three link-three-default-theme">
+  <section class="app-link-three-header">
+    <span class="lt-font lt-icon-logo"></span>
+
+    <section class="app-link-three-buttons">
+      <button class="app-link-three-button-links"
+      (click)="navigateLinks()">
+        <span class="lt-font lt-icon-link"></span>
+
+        <label class="lt-txt-s-bold">{{LINKS_LABEL}}</label>
+      </button>
+
+      <button class="app-link-three-button-profile"
+      (click)="navigateProfile()">
+        <span class="lt-font lt-icon-profile"></span>
+
+        <label class="lt-txt-s-bold">{{PROFILE_LABEL}}</label>
+      </button>
+    </section>
+
+    <button class="app-link-three-button-preview"
+            (click)="navigatePreview()">
+      <label class="lt-txt-s-bold">{{PREVIEW_LABEL}}</label>
+    </button>
+  </section>
+
+  <section class="app-link-three-container">
+    <link-three-mobile-panel class="app-link-three-container-mobile-panel"></link-three-mobile-panel>
+
+    <router-outlet></router-outlet>
+  </section>
+</article>

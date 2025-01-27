@@ -1,0 +1,48 @@
+<article class="link-three-link-view link-three-link-view-preset-preset-98">
+  <section class="link-three-link-view-options">
+    <span class="lt-font lt-icon-equal"></span>
+
+    <label class="lt-txt-m link-three-link-view-number"></label>
+
+    <button class="link-three-link-view-remove-button">{{REMOVE_LABEL}}</button>
+  </section>
+
+  <section class="link-three-link-view-platform-content">
+    <label class="link-three-link-view-platform-label">{{PLATFORM_LABEL}}</label>
+
+    <section ssDropDown
+             class="link-three-link-view-platform-menu-content">
+      <button ssDropDownToggle
+              class="link-three-link-view-platform-button">
+        <span class="lt-font lt-icon-{{link.linkType}}"></span>
+
+        <label>{{link.linkType}}</label>
+
+        <span class="lt-font lt-icon-dropdown-up"></span>
+
+        <span class="lt-font lt-icon-dropdown-down"></span>
+      </button>
+
+      <section class="link-three-link-view-platform-items"
+               ssDropDownMenu>
+        <button class="link-three-link-view-platform-item"
+                type="button"
+                *ngFor="let item of []">
+          <span class="lt-font lt-icon-{{link.linkType}}"></span>
+
+          <label class="lt-txt-m">{{item}}</label>
+        </button>
+      </section>
+    </section>
+  </section>
+
+  <section class="link-three-link-view-link-content">
+    <label class="lt-txt-s">{{LINK_LABEL}}</label>
+
+    <span class="lt-font lt-icon-link"></span>
+
+    <input class="lt-txt-m"
+           type="text"
+           value="item">
+  </section>
+</article>

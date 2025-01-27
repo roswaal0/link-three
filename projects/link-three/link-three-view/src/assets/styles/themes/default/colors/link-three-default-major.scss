@@ -1,0 +1,10 @@
+.link-three-default-theme {
+  --link-three-major-h: 252;
+  --link-three-major-s: 100%;
+  --link-three-major-l: 100%;
+  --link-three-major-hsl: var(--link-three-major-h), var(--link-three-major-s), var(--link-three-major-l);
+  --link-three-major-62: hsl(var(--link-three-major-h), var(--link-three-major-s), calc(var(--link-three-major-l) - 38%));
+  --link-three-major-84: hsl(var(--link-three-major-h), var(--link-three-major-s), calc(var(--link-three-major-l) - 16%));
+  --link-three-major-96: hsl(var(--link-three-major-h), var(--link-three-major-s), calc(var(--link-three-major-l) - 4%));
+  --link-three-major: hsl(var(--link-three-major-h), var(--link-three-major-s), var(--link-three-major-l));
+}

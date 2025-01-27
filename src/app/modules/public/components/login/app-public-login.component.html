@@ -1,0 +1,73 @@
+<article class="app-public-login link-three-default-theme app-public-login-preset-98">
+  <section class="app-public-login-container">
+    <span class="lt-font lt-icon-logo"></span>
+
+    <section class="app-public-login-form-container app-public-login-form-container-preset">
+      <section class="app-public-login-labels-login">
+        <label class="lt-txt-m-bold">{{LOGIN_LABEL}}</label>
+
+        <label class="lt-txt-m">{{LOGIN_DETAIL_LABEL}}</label>
+      </section>
+
+      <form class="app-public-login-form"
+            [formGroup]="loginForm"
+            [ngClass]="isInvalidLogin ? 'app-public-login-form-invalid' : EMPTY"
+            (ngSubmit)="login()">
+        <section class="app-public-login-form-field"
+                 for="email"
+                 [@invalidLogin]="isInvalidLogin">
+          <label class="lt-txt-s">{{EMAIL_LABEL}}</label>
+
+          <span class="lt-font lt-icon-email"></span>
+
+          <input class="lt-txt-m app-public-login-form-input"
+                 id="email"
+                 type="text"
+                 formControlName="email"
+                 autofocus
+                 required
+                 [attr.placeholder]="EMAIL_PLACEHOLDER"
+                 [ngClass]="{'app-public-login-content-field-input-notice' : isLoginForm}"
+                 [@invalidLogin]="isInvalidLogin"
+                 [attr.disabled]="isLoginForm ? true : null"/>
+        </section>
+
+        <section class="app-public-login-form-field"
+                 for="password"
+                 [@invalidLogin]="isInvalidLogin">
+          <label class="lt-txt-s">{{PASSWORD_LABEL}}</label>
+
+          <span class="lt-font lt-icon-lock"></span>
+
+          <input class="lt-txt-m app-public-login-form-input"
+                 id="password"
+                 type="password"
+                 formControlName="password"
+                 required
+                 [attr.placeholder]="PASSWORD_PLACEHOLDER"
+                 [ngClass]="{'app-public-login-content-field-input-notice' : isLoginForm}"
+                 [@invalidLogin]="isInvalidLogin"
+                 [attr.disabled]="isLoginForm ? true : null"/>
+        </section>
+
+        <section class="app-public-login-form-buttons"
+                 *ngIf="!isLoginForm">
+          <button class="app-public-login-form-field-submit"
+                  id="login"
+                  type="submit"
+                  [ngClass]="loginForm.valid ? 'app-public-login-form-field-submit-major' : 'app-public-login-form-field-submit-major-invalid'"
+                  [disabled]="!loginForm.valid">
+
+            <label class="lt-txt-s-bold">Login</label>
+          </button>
+        </section>
+      </form>
+
+      <section class="app-public-login-section-create">
+        <label class="lt-txt-m">{{CREATE_ACCOUNT_DETAIL_LABEL}}</label>
+
+        <label class="lt-txt-m app-public-login-create">{{CREATE_ACCOUNT_LABEL}}</label>
+      </section>
+    </section>
+  </section>
+</article>

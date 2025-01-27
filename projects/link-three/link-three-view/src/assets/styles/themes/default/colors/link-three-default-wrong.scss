@@ -1,0 +1,8 @@
+.link-three-default-theme {
+  --link-three-wrong-h: 0;
+  --link-three-wrong-s: 100%;
+  --link-three-wrong-l: 50%;
+  --link-three-wrong-hsl: var(--link-three-wrong-h), var(--link-three-wrong-s), var(--link-three-wrong-l);
+  --link-three-wrong-61: hsl(var(--link-three-wrong-h), var(--link-three-wrong-s), calc(var(--link-three-wrong-l) + 11%));
+  --link-three-wrong: hsl(var(--link-three-wrong-h), var(--link-three-wrong-s), var(--link-three-wrong-l));
+}

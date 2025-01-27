@@ -1,0 +1,111 @@
+.link-three-links-panel-view {
+  box-sizing: border-box;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .lt-icon-image {
+    font-size: 160px;
+  }
+}
+
+.link-three-links-panel-preset {
+  background-color: var(--link-three-preset);
+}
+
+.link-three-links-panel-view-container-links {
+  border-bottom: 2px solid var(--link-three-preset-85);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  padding: 30px;
+}
+
+.link-three-links-panel-view-editor {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-three-links-panel-view-editor-title {
+
+}
+
+.link-three-links-panel-view-editor-description {
+  color: var(--link-three-preset-45);
+}
+
+.link-three-links-panel-view-button-add {
+  background-color: transparent;
+  border: 2px solid var(--link-three-major-62);
+  border-radius: 5px;
+  cursor: pointer;
+  min-height: 45px;
+
+  .link-three-links-panel-view-add {
+    color: var(--link-three-major-62);
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: var(--link-three-major-96);
+  }
+}
+
+.link-three-links-panel-view-guide-content {
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding: 0 100px;
+}
+
+.link-three-links-panel-view-guide-content-preset-98 {
+  background-color: var(--link-three-preset-98);
+}
+
+.link-three-links-panel-view-guide {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.link-three-links-panel-view-guide-title {
+}
+
+.link-three-links-panel-view-guide-description {
+  color: var(--link-three-preset-45);
+  text-align: center;
+}
+
+.link-three-links-panel-view-container-button {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px;
+}
+
+.link-three-links-panel-view-button-save {
+  border-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 46px;
+  width: 91px;
+
+  .link-three-links-panel-view-save {
+    color: var(--link-three-preset);
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: var(--link-three-major-84);
+  }
+}
+
+.link-three-links-panel-view-button-save-major-62 {
+  background-color: var(--link-three-major-62);
+}

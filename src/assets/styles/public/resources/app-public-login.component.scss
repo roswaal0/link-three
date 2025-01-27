@@ -1,0 +1,91 @@
+.app-public-login {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.app-public-login-preset-98 {
+  background-color: var(--link-three-preset-98);
+}
+
+.app-public-login-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 573px;
+  width: 476px;
+}
+
+.app-public-login-form-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  height: 100%;
+  padding: 40px;
+  width: 100%;
+}
+
+.app-public-login-labels-login {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-public-login-form-container-preset {
+  background-color: var(--link-three-preset);
+}
+
+.app-public-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.app-public-login-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+
+  .lt-icon-email,
+  .lt-icon-lock {
+    bottom: 16px;
+    position: absolute;
+    left: 16px;
+  }
+}
+
+.app-public-login-form-input {
+  border: 2px solid var(--link-three-preset-85);
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 48px;
+  padding: 0 42px;
+  width: 100%;
+}
+
+.app-public-login-form-field-submit {
+  background-color: var(--link-three-major-62);
+  border-radius: 8px;
+  cursor: pointer;
+  height: 46px;
+  width: 100%;
+
+  .lt-txt-s-bold {
+    color: var(--link-three-preset);
+    cursor: pointer;
+  }
+}
+
+.app-public-login-section-create {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.app-public-login-create {
+  color: var(--link-three-major-62);
+  cursor: pointer;
+}
