@@ -2,7 +2,7 @@
  * @author Oswaldo Pacheco
  */
 import {AfterViewInit, ChangeDetectionStrategy, Component, Input, ViewEncapsulation} from '@angular/core';
-import {LinkResponse} from '@link-three-api';
+import {LinkResponse} from '@link-three/link-three-api';
 
 @Component({
   selector: 'link-three-links-panel-view',

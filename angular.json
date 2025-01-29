@@ -55,17 +55,26 @@
               "src/favicon.ico",
               {
                 "glob": "**/*",
-                "input": "./projects/link-three/link-three-view/src/assets/images/",
-                "output": "./assets/"
+                "input": "src/assets/",
+                "ignore": [
+                  "**/*.scss"
+                ],
+                "output": "/assets/"
+              },
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@link-three/link-three-view/images/",
+                "output": "./assets/link-three-view/"
               }
             ],
             "styles": [
               "src/styles.scss",
-              "projects/link-three/link-three-view/src/assets/styles/link-three-view-styles.scss",
-              "src/assets/styles/link-three-styles.scss"
+              "src/assets/styles/link-three-styles.scss",
+              "@link-three/link-three-view/styles/link-three.view.min.css"
             ],
             "scripts": [],
-            "serviceWorker": true
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
             "production": {

@@ -1,6 +1,8 @@
 <article class="app-public-login link-three-default-theme app-public-login-preset-98">
   <section class="app-public-login-container">
-    <span class="lt-font lt-icon-logo"></span>
+    <img class="app-public-login-logo-img"
+         src="assets/images/lt-logo.svg"
+         alt="lt-logo"/>
 
     <section class="app-public-login-form-container app-public-login-form-container-preset">
       <section class="app-public-login-labels-login">
@@ -14,8 +16,7 @@
             [ngClass]="isInvalidLogin ? 'app-public-login-form-invalid' : EMPTY"
             (ngSubmit)="login()">
         <section class="app-public-login-form-field"
-                 for="email"
-                 [@invalidLogin]="isInvalidLogin">
+                 for="email">
           <label class="lt-txt-s">{{EMAIL_LABEL}}</label>
 
           <span class="lt-font lt-icon-email"></span>
@@ -33,8 +34,7 @@
         </section>
 
         <section class="app-public-login-form-field"
-                 for="password"
-                 [@invalidLogin]="isInvalidLogin">
+                 for="password">
           <label class="lt-txt-s">{{PASSWORD_LABEL}}</label>
 
           <span class="lt-font lt-icon-lock"></span>
@@ -46,7 +46,6 @@
                  required
                  [attr.placeholder]="PASSWORD_PLACEHOLDER"
                  [ngClass]="{'app-public-login-content-field-input-notice' : isLoginForm}"
-                 [@invalidLogin]="isInvalidLogin"
                  [attr.disabled]="isLoginForm ? true : null"/>
         </section>
 
@@ -55,10 +54,10 @@
           <button class="app-public-login-form-field-submit"
                   id="login"
                   type="submit"
-                  [ngClass]="loginForm.valid ? 'app-public-login-form-field-submit-major' : 'app-public-login-form-field-submit-major-invalid'"
+                  [ngClass]="{'app-public-login-form-field-invalid': !loginForm.valid}"
                   [disabled]="!loginForm.valid">
 
-            <label class="lt-txt-s-bold">Login</label>
+            <label class="lt-txt-s-bold">{{LOGIN_LABEL}}</label>
           </button>
         </section>
       </form>

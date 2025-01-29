@@ -9,29 +9,30 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
     "paths": {
       "@link-three": [
         "dist/link-three/link-three",
         "dist/link-three"
       ],
-      "@link-three-api": [
+      "@link-three/link-three-api": [
         "dist/link-three-api/link-three-api",
         "dist/link-three-api"
       ],
-      "@link-three-core": [
+      "@link-three/link-three-core": [
         "dist/link-three-core/link-three-core",
         "dist/link-three-core"
       ],
-      "@link-three-view": [
+      "@link-three/link-three-view": [
         "dist/link-three-view/link-three-view",
         "dist/link-three-view"
       ]
     },
-    "declaration": false,
-    "downlevelIteration": true,
-    "experimentalDecorators": true,
-    "moduleResolution": "node",
-    "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
     "lib": [

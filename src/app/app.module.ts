@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {RouterModule} from '@angular/router';
-import {LinkThreeModule} from 'link-three';
-import {LinkThreeApiModule} from 'link-three-api';
-import {LinkThreeCoreModule} from 'link-three-core';
-import {LinkThreeViewModule} from 'link-three-view';
+import {LinkThreeModule} from '@link-three/link-three';
+import {LinkThreeApiModule} from '@link-three/link-three-api';
+import {LinkThreeCoreModule} from '@link-three/link-three-core';
+import {LinkThreeViewModule} from '@link-three/link-three-view';
 
 import { AppComponent } from './app.component';
 import {SecureGuardCanActiveService} from './bootstrap/security/secure-guard-can-active.service';

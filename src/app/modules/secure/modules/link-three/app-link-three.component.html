@@ -1,17 +1,25 @@
 <article class="app-link-three link-three-default-theme">
   <section class="app-link-three-header">
-    <span class="lt-font lt-icon-logo"></span>
+    <button class="app-link-three-header-logout"
+            [title]="LOGOUT_LABEL"
+            (click)="logout()">
+      <img class="app-link-three-header-logo-img"
+           src="assets/link-three-view/lt-logo.svg"
+           alt="lt-logo"/>
+    </button>
 
     <section class="app-link-three-buttons">
       <button class="app-link-three-button-links"
-      (click)="navigateLinks()">
+              [ngClass]="{'app-link-three-button-links-active': isLinksActive}"
+              (click)="navigateLinks()">
         <span class="lt-font lt-icon-link"></span>
 
         <label class="lt-txt-s-bold">{{LINKS_LABEL}}</label>
       </button>
 
       <button class="app-link-three-button-profile"
-      (click)="navigateProfile()">
+              [ngClass]="{'app-link-three-button-profile-active': !isLinksActive}"
+              (click)="navigateProfile()">
         <span class="lt-font lt-icon-profile"></span>
 
         <label class="lt-txt-s-bold">{{PROFILE_LABEL}}</label>

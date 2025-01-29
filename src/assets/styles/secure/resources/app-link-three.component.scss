@@ -19,12 +19,24 @@
   padding: 0 25px;
 
   .lt-icon-logo {
+    color: var(--link-three-major-62);
+    font-size: 20px;
     height: fit-content;
   }
 
   .lt-txt-s-bold {
     cursor: pointer;
   }
+}
+
+.app-link-three-header-logout {
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.app-link-three-header-logo-img {
+  width: 30px;
 }
 
 .app-link-three-buttons {
@@ -50,12 +62,20 @@
   border: none;
   height: 46px;
   width: 122px;
+
+  .lt-icon-link {
+    font-size: 16px;
+  }
 }
 
 .app-link-three-button-profile {
   border: none;
   height: 46px;
   width: 187px;
+
+  .lt-icon-profile {
+    font-size: 16px;
+  }
 }
 
 .app-link-three-button-preview {
@@ -70,7 +90,9 @@
 
 .app-link-three-button-links:hover,
 .app-link-three-button-profile:hover,
-.app-link-three-button-preview:hover {
+.app-link-three-button-preview:hover,
+.app-link-three-button-links-active,
+.app-link-three-button-profile-active {
   background-color: var(--link-three-major-96);
 
   .lt-txt-s-bold,

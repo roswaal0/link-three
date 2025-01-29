@@ -2,8 +2,6 @@
  * @author Oswaldo Pacheco
  */
 import {ChangeDetectionStrategy, Component, OnInit, ViewEncapsulation} from '@angular/core';
-import {LinkResponse} from '@link-three-api';
-import {Observable, of} from 'rxjs';
 
 @Component({
   selector: 'link-three-mobile-panel-container',
@@ -20,5 +18,6 @@ export class LinkThreeMobilePanelContainerComponent implements OnInit {
     this._initialize();
   }
 
-  private _initialize(): void {}
+  private _initialize(): void {
+  }
 }

@@ -3,7 +3,7 @@
  */
 import {CommonModule} from '@angular/common';
 import {NgModule} from '@angular/core';
-import {LinkThreeLinksPanelModule} from '@link-three';
+import {LinkThreeLinksPanelModule} from '@link-three/link-three';
 import {LinkThreeLinksComponent} from './link-three-links.component';
 
 @NgModule({

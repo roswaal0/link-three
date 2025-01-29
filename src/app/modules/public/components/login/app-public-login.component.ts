@@ -1,8 +1,9 @@
 /**
  * @author Oswaldo Pacheco
  */
-import {AfterViewInit, Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, ViewEncapsulation} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {Router} from '@angular/router';
 import {INVALID_DATA} from '../../../../commons/animations/invalid-data-animation';
 
 @Component({
@@ -11,7 +12,7 @@ import {INVALID_DATA} from '../../../../commons/animations/invalid-data-animatio
   encapsulation: ViewEncapsulation.None,
   animations: [INVALID_DATA]
 })
-export class AppPublicLoginComponent implements AfterViewInit, OnInit {
+export class AppPublicLoginComponent {
 
   public isInvalidLogin: boolean;
   public isLoginForm: boolean;
@@ -27,7 +28,11 @@ export class AppPublicLoginComponent implements AfterViewInit, OnInit {
   public readonly PASSWORD_LABEL: string = 'Password';
   public readonly PASSWORD_PLACEHOLDER: string = 'Enter your password';
 
-  constructor(private _formBuilder: FormBuilder) {
+  private readonly _LINK_THREE_TOKEN_SESSION: string = 'LINK_THREE_TOKEN_SESSION';
+  private readonly _PATH_SECURE: string = '/secure';
+
+  constructor(private _formBuilder: FormBuilder,
+              private _router: Router) {
 
     this.loginForm = this._formBuilder.group({
       email: [this.EMPTY, Validators.required],
@@ -37,22 +42,13 @@ export class AppPublicLoginComponent implements AfterViewInit, OnInit {
     this.isLoginForm = false;
   }
 
-  public ngAfterViewInit(): void {
-  }
-
-  public ngOnInit(): void {
-  }
-
   public login(): void {
-  //logica logueo
+    localStorage.setItem(this._LINK_THREE_TOKEN_SESSION, this.generateTokenSession());
 
+    this._router.navigateByUrl(this._PATH_SECURE);
   }
 
-  public resetInvalidLogin(): void {
-    this.isInvalidLogin = false;
-  }
-
-  public navigateLogin(): void {
-    this.isLoginForm = false;
-  }
+  private generateTokenSession(): string {
+    return Math.random().toString(36).substr(2);
+  };
 }

@@ -2,7 +2,7 @@
  * @author Oswaldo Pacheco
  */
 import {ChangeDetectionStrategy, Component, OnInit, ViewEncapsulation} from '@angular/core';
-import {LinkResponse} from '@link-three-api';
+import {LinkResponse} from '@link-three/link-three-api';
 import {Observable, of} from 'rxjs';
 
 @Component({

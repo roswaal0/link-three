@@ -3,8 +3,8 @@
  */
 import {CommonModule} from '@angular/common';
 import {NgModule} from '@angular/core';
-import {LinkThreeMobilePanelContainerModule} from '@link-three-core';
-import {LinkThreeMobilePanelViewModule} from '@link-three-view';
+import {LinkThreeMobilePanelContainerModule} from '@link-three/link-three-core';
+import {LinkThreeMobilePanelViewModule} from '@link-three/link-three-view';
 import {ReactiveComponentModule} from '@ngrx/component';
 import {LinkThreeMobilePanelComponent} from './link-three-mobile-panel.component';
 
