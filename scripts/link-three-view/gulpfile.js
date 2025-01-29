@@ -12,6 +12,7 @@ module.exports = () => {
   const angularPackage = require('./build/angular-package');
 
   const stylesClean = require('./build/styles-clean');
+  const fontsCompileIcons = require('./build/fonts-compile-icons');
   const stylesCompileScss = require('./build/styles-compile-scss');
   const stylesPackage = require('./build/styles-package');
   const stylesDeployCss = require('./build/styles-deploy-css');
@@ -20,6 +21,10 @@ module.exports = () => {
   gulp.task('link-three-view:angular-package', angularPackage);
 
   gulp.task('link-three-view:styles-clean', stylesClean);
+  gulp.task('link-three-view:fonts-compile-icons', fontsCompileIcons);
+  gulp.task('link-three-view:fonts-compile', gulp.series(
+    'link-three-view:fonts-compile-icons'
+  ));
   gulp.task('link-three-view:styles-compile-scss', stylesCompileScss);
   gulp.task('link-three-view:styles-package', stylesPackage);
   gulp.task('link-three-view:styles-deploy-css', stylesDeployCss);
@@ -36,6 +41,7 @@ module.exports = () => {
 
   gulp.task('link-three-view:styles', gulp.series(
     'link-three-view:styles-clean',
+    'link-three-view:fonts-compile',
     'link-three-view:styles-compile-scss',
     'link-three-view:styles-package',
     'link-three-view:styles-deploy'

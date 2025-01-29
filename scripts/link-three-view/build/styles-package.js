@@ -10,7 +10,8 @@
   const gulpConcat = require('gulp-concat');
 
   const SRC = [
-    CONFIG.folder.target.css + '/*.css'
+    CONFIG.folder.target.css + '/*.css',
+    CONFIG.folder.target.fonts + '/*.css'
   ];
 
   const CLEAN_CSS_OPTIONS = {

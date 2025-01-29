@@ -6,12 +6,14 @@
     "project": {
       "path": "./projects/link-three/link-three-view",
       "assets": {
+        "fontsIcons": "./projects/link-three/link-three-view/src/assets/styles/fonts/lt-icon/icons-font",
         "scss": "./projects/link-three/link-three-view/src/assets/styles",
         "images": "./projects/link-three/link-three-view/src/assets/images"
       }
     },
     "target": {
       "css": "./target/link-three-view/css",
+      "fonts": "./target/link-three-view/fonts",
       "distCss": "./target/link-three-view/dist-css"
     },
     "dist": {
